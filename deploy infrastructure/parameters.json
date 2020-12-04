@@ -1,0 +1,90 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": "zaz-webapp-01"
+        },
+        "webapp2name": {
+            "value": "zaz-webapp-02"
+        },
+        "insightsName": {
+            "value": "zaz-webapp-ex01"
+        },
+        "frontDoorName": {
+            "value": "zaz-fd-ex01"
+        },
+        "wafresourceName": {
+                "value": "FrontDoorWAF"
+            },
+        "FrontDoorlocation": {
+            "value": "global"
+        },
+        "frontendEndpointName": {
+            "value": "zaz-fd-ex01-azurefd-net"
+        },
+        "frontendEndpointHostname": {
+            "value": "zaz-fd-ex01.azurefd.net"
+        },
+        "backendPoolName1": {
+            "value": "zaz-be-ex01"
+        },
+        "backendAddress1": {
+            "value": "zaz-webapp-01.azurewebsites.net"
+        },
+        "backendAddress2": {
+            "value": "zaz-webapp-01.azurewebsites.net"
+        },
+        "routingRule1": {
+            "value": "zaz-rules-ex01"
+        },
+        "workspaceName": {
+            "value": "zaz-Ex01-loganalytic2244"
+        },
+        "hostingPlanName": {
+            "value": "zaz-ASP-WTexample01"
+        },
+        "ResourceGroup": {
+            "value": "zaz-example01"
+        },
+        "healthProbeSetting1": {
+            "value": "healthProbeSettings-1596713738630"
+        },
+        "loadBalancingSetting1": {
+            "value": "loadBalancingSettings-1596713738631"
+        },
+        "alwaysOn": {
+            "value": false
+        },
+        "sku": {
+            "value": "Free"
+        },
+        "skuCode": {
+            "value": "F1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "workerSizeId": {
+            "value": "0"
+        },
+        "workspaceSku": {
+            "value": "pergb2018"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "currentStack": {
+            "value": "dotnetcore"
+        },
+        "phpVersion": {
+            "value": "OFF"
+        },
+        "wafPolicyName": {
+            "value": "FrontDoorWAF"
+        },
+        "errorLink": {
+            "value": "https://zaz-webapp-ex01.scm.azurewebsites.net/detectors?type=tools&name=eventviewer"
+        }
+    }
+}
